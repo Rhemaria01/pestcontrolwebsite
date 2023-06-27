@@ -1,24 +1,28 @@
-import logo from './logo.svg';
+import React, { useState, Suspense, lazy } from 'react';
 import './App.css';
-
+import Navbar from './componetns/Navbar';
+import { BrowserRouter, Routes, Route } from 'react-router-dom';
+import Loader from './componetns/Loader';
+import { ModalContext } from './context/ModalContext';
+import Modal from './componetns/Modal';
+import ServicesPage from './pages/ServicesPage';
+const Homepage = lazy(() => import("./pages/Homepage"))
 function App() {
+  const [modalOpen, setModalOpen] = useState(false);
+  const [message,setMessage] = useState("");
+
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
+  <ModalContext.Provider value={{modalOpen, message, setModalOpen,  setMessage}}>
+  <BrowserRouter >
+    <Navbar />
+    <Routes>
+    <Route path="/" element={<Suspense fallback={<Loader/>}><Homepage/></Suspense>}/>
+    <Route path="/services" element={<Suspense fallback={<Loader/>}><ServicesPage/> </Suspense>}/>
+    </Routes>
+    {modalOpen && <Modal />}
+  </BrowserRouter>
+  </ModalContext.Provider>
+
   );
 }
 

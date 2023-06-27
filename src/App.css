@@ -1,38 +1,94 @@
-.App {
-  text-align: center;
+:root {
+ --primary: #FFD93D;
+ --text: #000000;
+ --bg: #FFFFFF;
+ --error: #dc2626;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+a{
+  text-decoration: none;
+  color: inherit;
+  cursor: pointer
+}
+.input-field{
+  border: solid var(--text) 1px;
+  font-size: 1rem;
+  padding: 1rem 2rem;
+  border-top-left-radius: 1rem;
+  border-bottom-right-radius: 1rem;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+ul{
+  list-style-type: none;
+  padding-left: 0;
+}
+.input-button{
+  background-color: var(--primary);
+  border: none;
+  font-weight: 800;
+}
+.error-text{
+  font-size: small;
+  color: var(--error);
+
+}
+.error{
+  border: solid var(--error) 1px;
+
+}
+.modal{
+  position: absolute;
+  z-index: 5;
+  top: 50%;
+  left:50%;
+  transform: translate(-50%,-50%);
+  filter: blur(0);
 }
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+.blur{
+  filter:blur(12px)
+}
+.modal-box{
+  background: var(--primary);
+  aspect-ratio: 1/1;
+  width: 24rem;
   display: flex;
   flex-direction: column;
   align-items: center;
   justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+  border-radius: 1rem;
+  font-size: 1.5rem;
+  font-weight: 700;
+  color: var(--text);
+  text-align: center;
+}
+.modal-text{
+  width: 80%;
+  margin-left: 0.5rem;
+}
+.modal-btn{
+  background: var(--bg);
+  border-radius: 9999px;
+  border: none;
+  font-size: 1.5rem;
+  padding: 0 0.5rem ;
+  margin-top: 2rem;
+  cursor: pointer;
+}
+.text-underline{
+  text-decoration: underline var(--primary) 0.375rem;
+  text-underline-offset: 0.5rem;
+}
+    .loader {
+  border: 8px solid #f3f3f3; /* Light grey */
+  border-top: 8px solid #3498db; /* Blue */
+  border-radius: 50%;
+  width: 60px;
+  height: 60px;
+  animation: spin 2s linear infinite;
 }
 
-.App-link {
-  color: #61dafb;
-}
-
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+@keyframes spin {
+  0% { transform: rotate(0deg); }
+  100% { transform: rotate(360deg); }
 }

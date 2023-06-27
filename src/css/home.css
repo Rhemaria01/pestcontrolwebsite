@@ -1,0 +1,156 @@
+.home{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.hero-section{
+ display: flex;
+ flex-direction: column;
+ align-items: center;
+ justify-content: center;
+ text-align: center;
+ font-size: 1.5rem;
+ gap: 2rem;
+}
+
+.hero-text{
+font-weight: bolder;
+text-decoration: underline var(--primary) 0.625rem;
+text-underline-offset: 1.5rem;
+}
+
+.hero-img,.about-img{
+    height: 20rem;
+    display: block;
+    object-position: center;
+    object-fit: cover;
+}
+.about-img{
+  border-radius: 1rem;
+}
+
+.cta{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 1rem;
+  margin: 5rem 0rem;
+}
+
+.home-text{
+  font-size: 2.25rem;
+  font-weight: 800;
+  text-align: center;
+}
+
+.cta-form{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 2rem;
+}
+.about-section,.ser-section{
+  display: flex;
+  flex-direction: column;
+  gap: 2rem;
+  width: 80%;
+}
+.about-text{
+  font-size: 2.25rem;
+  font-weight: 800;
+}
+.about-img{
+  aspect-ratio: 1/1;
+  height: 20rem;
+}
+.about-left{
+  display: flex;
+  flex-direction: column;
+  gap: 2rem;
+  text-align: left;
+}
+.about-left > h3 {
+  font-size: 2.25rem;
+}
+.about-left >p, .list-text{
+  font-size: 1.5rem;
+}
+
+.list-items{
+  display: flex;
+  flex-direction: row;
+  gap: 1rem;
+  align-items: center;
+  margin-bottom: 2rem;
+}
+.list-text > span, .exp-card > h3{
+  color: var(--primary);
+}
+.exp-card{
+  aspect-ratio: 1/1;
+  background: var(--bg);
+  position: relative;
+  height: 16rem;
+  border-radius: 1rem;
+  bottom: 40px;
+  left:15%;
+  filter: drop-shadow(0 10px 8px rgb(0 0 0 / 0.04)) drop-shadow(0 4px 3px rgb(0 0 0 / 0.1));
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+.exp-card > h3{
+  font-size: 8rem;
+}
+.exp-card > p{
+  font-size: 1.5rem;
+  font-weight: 500;
+}
+.ser-section > ul {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 2rem;
+  margin: 2rem 0rem;
+}
+.ser-section > div {
+  align-self: center;
+  margin-bottom: 2rem;
+}
+@media screen and (min-width: 768px) {
+  .hero-section {
+    flex-direction: row;
+    text-align: left;
+    gap: 0rem;
+  }
+  .cta-form{
+    flex-direction: row;
+  }
+  .hero-img{
+    height: 35rem
+}
+  .about-section{
+    flex-direction: row;
+    gap: 2rem;
+  }
+  .about-img{
+    height: 31.25rem;
+  }
+  .exp-card{
+    left: 60%;
+    bottom: 105px;
+  }
+  .ser-section > ul {
+    flex-direction: row;
+    gap: 5rem;
+  }
+}
+
+@media screen and (min-width: 1024px) {
+  .hero-section{
+      font-size: 3.25rem;
+  }    
+}
