@@ -54,7 +54,7 @@ code {
   background-position: center;
   filter: blur(5px);
   border-radius: 1rem;
-  transition: filter 2000ms ease-out;
+  transition: filter 200ms ease-out;
 }
 .blur-load.loaded{
   filter: blur(0);
@@ -65,5 +65,5 @@ code {
 }
 .blur-load > img {
   opacity: 0;
-  transition: opacity 2000ms ease-in-out 
+  transition: opacity 200ms ease-in-out 
 }

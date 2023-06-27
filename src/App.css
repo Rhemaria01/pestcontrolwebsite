@@ -2,6 +2,8 @@
  --primary: #FFD93D;
  --text: #000000;
  --bg: #FFFFFF;
+ --borderPrimary: rgb(255 217 61 / 0.5);
+ --borderSecondary: rgb(0 0 0 / 0.15);
  --error: #dc2626;
 }
 
@@ -80,11 +82,11 @@ ul{
   text-underline-offset: 0.5rem;
 }
     .loader {
-  border: 8px solid #f3f3f3; /* Light grey */
-  border-top: 8px solid #3498db; /* Blue */
+  border: 8px solid var(--error); 
+  border-top: 8px solid var(--primary); 
   border-radius: 50%;
-  width: 60px;
-  height: 60px;
+  width: 4rem;
+  height: 4rem;
   animation: spin 2s linear infinite;
 }
 

@@ -1,3 +1,12 @@
+//Hero Image
+import HeroImg from "../assets/hero.png"
+import HeroSmall from "../assets/hero-small.png"
+
+//About Us Image
+import AboutImg from "../assets/AboutUs.jpeg"
+import AboutSmall from "../assets/aboutUs-small.jpeg"
+
+//Services Images
 import Cockroach from "../assets/Cockroach.jpeg"
 import CockroachSmall from "../assets/cockroach-small.jpeg"
 import Mold from "../assets/Mold.jpeg"
@@ -23,20 +32,19 @@ import SpiderSmall from "../assets/spider-small.jpeg"
 import Weed from "../assets/Weed.jpeg"
 import WeedSmall from "../assets/weed-small.jpeg"
 
+//Areas We Serve Images
+import Commercial from "../assets/commercial.jpeg"
+import CommercialSmall from "../assets/commercial-small.jpeg"
+import Industry from "../assets/Industry.jpeg"
+import IndustrySmall from "../assets/industry-small.jpeg"
+import Residential from "../assets/Residential.jpeg"
+import ResidentialSmall from "../assets/residential-small.jpeg"
+
     export const Hero= {
         title: ["Truly the Safest and", "Reliable Choice", "For Your"],
-        title1: "Family and Business"
-    }
-
-    export const AboutUS = {
-        title: "About Us",
-        heading: "Welcome to [Company Name], your trusted partner in pest control solutions!",
-        text: "At [Company Name], we understand the importance of maintaining a clean and pest-free environment."
-        +" With years of experience in the industry, we have built a reputation for providing reliable and effective"
-        +"pest control services to homes and businesses.Our mission is to protect your property and the well-being "
-        +"of your loved ones by offering comprehensive pest management solutions. We believe that everyone deserves to"
-        +"live and work in a safe and comfortable environment, free from the nuisance and health risks associated with pests.",
-        checkmarks: ["Trusted Technicians","Affordable Cost","24/7 Pest Control Support"]
+        title1: "Family and Business",
+        image: HeroImg,
+        imageSmall: HeroSmall
     }
     
     export const CallToAction = {
@@ -61,10 +69,24 @@ import WeedSmall from "../assets/weed-small.jpeg"
             type: "button",
         }],
         successMessage: "Received your contact info, We will get back to you very soon!",
+
+    }
+
+    export const AboutUS = {
+        title: "About Us",
+        heading: "Welcome to [Company Name], your trusted partner in pest control solutions!",
+        text: "At [Company Name], we understand the importance of maintaining a clean and pest-free environment."
+        +" With years of experience in the industry, we have built a reputation for providing reliable and effective"
+        +"pest control services to homes and businesses.Our mission is to protect your property and the well-being "
+        +"of your loved ones by offering comprehensive pest management solutions. We believe that everyone deserves to"
+        +"live and work in a safe and comfortable environment, free from the nuisance and health risks associated with pests.",
+        checkmarks: ["Trusted Technicians","Affordable Cost","24/7 Pest Control Support"],
+        image: AboutImg,
+        imageSmall: AboutSmall,
         expYears: "20",
         expText: "Years of Experience"
     }
-
+    
     export const Services = {
         title: "Services",
         btn: "More Services",
@@ -216,3 +238,24 @@ import WeedSmall from "../assets/weed-small.jpeg"
             ]
           
     } 
+
+    export const AWSData = {
+      title: "Areas We Serve",
+      areas: [
+        {
+          title: "Commercial",
+          image: Commercial,
+          imageSmall: CommercialSmall,
+        },
+        {
+          title: "Industrial",
+          image: Industry,
+          imageSmall: IndustrySmall,
+        },
+        {
+          title: "Residential",
+          image: Residential,
+          imageSmall: ResidentialSmall,
+        },
+      ]
+    }

@@ -51,7 +51,7 @@ text-underline-offset: 1.5rem;
   align-items: center;
   gap: 2rem;
 }
-.about-section,.ser-section{
+.about-section,.ser-section,.aws-section{
   display: flex;
   flex-direction: column;
   gap: 2rem;
@@ -109,7 +109,7 @@ text-underline-offset: 1.5rem;
   font-size: 1.5rem;
   font-weight: 500;
 }
-.ser-section > ul {
+.ser-section > ul, .aws-section > ul {
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -119,6 +119,29 @@ text-underline-offset: 1.5rem;
 .ser-section > div {
   align-self: center;
   margin-bottom: 2rem;
+}
+
+.aws-card{
+  aspect-ratio: 4/5;
+  width: 20rem;
+  border-radius: 1rem;
+  background: var(--bg);
+  display: flex;
+  flex-direction: column;
+  gap: 1.5rem;
+  color: var(--text);
+  text-align: center;
+  cursor: pointer;
+  filter: drop-shadow(10px 10px 0  var(--borderSecondary));
+  padding: 1rem 1rem;
+  font-size: 1.5rem;
+  margin-bottom: 10rem;
+  border-top: solid  var(--borderSecondary) 3px;
+  border-left: solid var(--borderSecondary) 3px;
+}
+.aws-img{
+  width: 100%;
+  border-radius: 1rem;
 }
 @media screen and (min-width: 768px) {
   .hero-section {
@@ -143,9 +166,13 @@ text-underline-offset: 1.5rem;
     left: 60%;
     bottom: 105px;
   }
-  .ser-section > ul {
+  .ser-section > ul  {
     flex-direction: row;
     gap: 5rem;
+  }
+  .aws-section > ul{
+    flex-direction: row;
+    justify-content: space-around;
   }
 }
 

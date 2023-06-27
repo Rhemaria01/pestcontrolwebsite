@@ -1,15 +1,8 @@
-import about from "../assets/AboutUs.jpg"
-import aboutSmall from "../assets/aboutUs-small.jpeg"
 import {BsCheckCircleFill} from "react-icons/bs"
-import { AboutUS, CallToAction } from "../data/Home"
-import loadImage from "../utils/loadImage"
-import { useEffect } from "react"
+import { AboutUS } from "../data/Home"
 import BlurLoad from "./BlurLoad"
 
 const AboutUs = () => {
-    useEffect(()=>{
-        loadImage();
-    },[])
   return (
     <section className="about-section container">
         <div className="about-left">
@@ -25,12 +18,12 @@ const AboutUs = () => {
         </ul>
         </div>
         <div>
-        <BlurLoad smallImg={aboutSmall}>
-            <img src={about} alt="about-us" className='about-img' loading='lazy'/>
+        <BlurLoad smallImg={AboutUS.imageSmall}>
+            <img src={AboutUS.image} alt="about-us" className='about-img' loading='lazy'/>
         </BlurLoad>
         <div className="exp-card">
-              <h3>{CallToAction.expYears}</h3>
-              <p>{CallToAction.expText}</p>
+              <h3>{AboutUS.expYears}</h3>
+              <p>{AboutUS.expText}</p>
         </div>
         <div>
             
