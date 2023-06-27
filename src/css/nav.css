@@ -11,8 +11,9 @@
     display: none;
     flex-direction: column;
     align-items: center;
-    font-size: 1rem;
+    font-size: 1.25rem;
     font-weight: 600;
+    line-height: 1.75rem;
 }
 .menu-toggle{
     display: block;
@@ -38,9 +39,10 @@
     .links{
         display: flex;
         flex-direction: row;
-        justify-content: space-between;
+        justify-content: center;
         align-items: center;
         width: 50%;
+        gap: 2rem;
     }
     .menu-toggle{
         display: none;
