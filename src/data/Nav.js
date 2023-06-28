@@ -1,7 +1,7 @@
 import {AiOutlineHome} from "react-icons/ai"
 import {GrServices} from "react-icons/gr"
 import {RiCustomerService2Fill} from "react-icons/ri"
-import {GrLocation} from "react-icons/gr"
+import {RiTeamFill} from "react-icons/ri"
 import Logo from "../assets/logo192.jpeg"
 import LogoSmall from "../assets/logo192-small.png"
 export const NavData = {
@@ -21,9 +21,9 @@ export const NavData = {
             to: "/contact-us",
             icon: <RiCustomerService2Fill />,
         },{
-            title: "Locations",
-            to: "/location",
-            icon: <GrLocation />,
+            title: "Team",
+            to: "/team",
+            icon: <RiTeamFill />,
         }
     ]
 }

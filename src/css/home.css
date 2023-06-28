@@ -4,7 +4,7 @@
   align-items: center;
 }
 
-.hero-section{
+.hero-section, .review-section{
  display: flex;
  flex-direction: column;
  align-items: center;
@@ -142,6 +142,35 @@ text-underline-offset: 1.5rem;
   width: 100%;
   border-radius: 1rem;
 }
+
+.review-section > h3 {
+  font-size: 2.25rem;
+}
+.review-section > h2{
+  font-size: 3rem;
+}
+.review-slider{
+  aspect-ratio: 910/367;
+  width: 80%
+}
+.review-card{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 2rem;
+  font-size: 1.5rem;
+  text-align: center;
+  margin: 1rem 0rem;
+}
+.avatar{
+  aspect-ratio: 1/1;
+  width: 15.625rem;
+}
+.review-description{
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+}
 @media screen and (min-width: 768px) {
   .hero-section {
     flex-direction: row;
@@ -173,10 +202,22 @@ text-underline-offset: 1.5rem;
     flex-direction: row;
     justify-content: space-around;
   }
+  .review-slider{
+    width: 56.875rem;
+  }
+  .review-card{
+    flex-direction: row;
+    width: 100%;
+    text-align: left;
+    margin: 3rem auto;
+  }
+  .review-description{
+    gap: 2rem;
+  }
 }
 
 @media screen and (min-width: 1024px) {
   .hero-section{
-      font-size: 3.25rem;
+    font-size: 3.25rem;
   }    
 }

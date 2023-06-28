@@ -1,0 +1,48 @@
+.contact-section{
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 5rem;
+    margin: 3rem auto 10rem;
+}
+.contact-section > h2 {
+    font-size: 3rem;
+}
+.contact-section > div {
+    display: flex;
+    flex-direction: column;
+    gap: 2rem;
+}
+.contact-card{
+    width: 20rem;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 0.75rem;
+    border: solid var(--primary) 3px;
+    border-radius: 1rem;
+    padding-bottom: 2rem;;
+}
+.contact-card > h3{
+    font-size: 1.5rem;
+}
+.contact-card > h2{
+    font-size: 1rem;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    gap: 0.25rem;
+}
+.contact-card > h2 > span{
+    color: var(--primary);
+    font-size: 1.2rem;
+}
+@media screen and (min-width: 768px) {
+    .contact-section > div{
+        flex-direction: row;
+        flex-wrap: wrap;
+        gap: 5rem;
+    }
+}

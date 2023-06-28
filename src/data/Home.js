@@ -40,6 +40,16 @@ import IndustrySmall from "../assets/industry-small.jpeg"
 import Residential from "../assets/Residential.jpeg"
 import ResidentialSmall from "../assets/residential-small.jpeg"
 
+//avatars
+import Avatar1 from "../assets/avatar1.jpeg"
+import AvatarSmall1 from "../assets/avatar1-small.jpeg"
+import Avatar2 from "../assets/avatar2.jpeg"
+import AvatarSmall2 from "../assets/avatar2-small.jpeg"
+import Avatar3 from "../assets/avatar3.jpeg"
+import AvatarSmall3 from "../assets/avatar3-small.jpeg"
+import Avatar4 from "../assets/avatar4.jpeg"
+import AvatarSmall4 from "../assets/avatar4-small.jpeg"
+
     export const Hero= {
         title: ["Truly the Safest and", "Reliable Choice", "For Your"],
         title1: "Family and Business",
@@ -74,8 +84,8 @@ import ResidentialSmall from "../assets/residential-small.jpeg"
 
     export const AboutUS = {
         title: "About Us",
-        heading: "Welcome to [Company Name], your trusted partner in pest control solutions!",
-        text: "At [Company Name], we understand the importance of maintaining a clean and pest-free environment."
+        heading: "Welcome to Pest Solutions, your trusted partner in pest control solutions!",
+        text: "At Pest Solutions, we understand the importance of maintaining a clean and pest-free environment."
         +" With years of experience in the industry, we have built a reputation for providing reliable and effective"
         +"pest control services to homes and businesses.Our mission is to protect your property and the well-being "
         +"of your loved ones by offering comprehensive pest management solutions. We believe that everyone deserves to"
@@ -258,4 +268,35 @@ import ResidentialSmall from "../assets/residential-small.jpeg"
           imageSmall: ResidentialSmall,
         },
       ]
+    }
+
+    export const TestinomialsData = {
+      title: "Testinomials",
+      heading: "Customer Reviews",
+      "reviews": [
+        {
+        "avatar": Avatar1,
+        "avatarSmall": AvatarSmall1,
+        "name": "John Doe",
+        "review": "I recently hired Pest Solutions for pest control services, and I couldn't be happier with the results. Their prompt response, professionalism, and effective treatment eliminated the pests from my home. I highly recommend Pest Solutions for their reliable and efficient service."
+        },
+        {
+        "avatar": Avatar2,
+        "avatarSmall": AvatarSmall2,
+        "name": "Mike Johnson",
+        "review": "I had a severe pest problem in my business premises, and I decided to contact Pest Solutions for help. Their team was incredibly knowledgeable and provided me with a customized pest control plan. They worked diligently, and within a short time, my business was free from pests. I'm grateful for their expertise and would definitely choose them again in the future."
+        },
+        {
+        "avatar": Avatar3,
+        "avatarSmall": AvatarSmall3,
+        "name": "Jane Smith",
+        "review": "After struggling with a persistent termite infestation, I reached out to Pest Solutions for assistance. They responded promptly and conducted a thorough inspection. The technicians were professional, and their treatment plan was effective. Since then, I haven't seen any signs of termites. I'm impressed with their service and would recommend them to anyone dealing with a similar issue."
+        },
+        {
+        "avatar": Avatar4,
+        "avatarSmall": AvatarSmall4,
+        "name": "Emily Wilson",
+        "review": "I recently moved into a new apartment and discovered a bed bug problem. It was distressing, but thanks to Pest Solutions, the issue was resolved efficiently. Their team was courteous and understanding, providing me with detailed information about the treatment process. The bed bugs were eradicated completely, and I can now sleep peacefully. I'm grateful for their expertise and would highly recommend their services."
+        }
+        ]
     }

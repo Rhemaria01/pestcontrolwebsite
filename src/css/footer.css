@@ -1,0 +1,91 @@
+  .footer{
+    width: 100%;
+    margin-top: 2rem;
+  }
+
+  .footer-section{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-color: var(--text);
+    color: var(--bg);
+    gap: 3rem;
+    padding:5rem 0;
+  }
+    
+  /* Links column */
+  .footer-links{
+    display: flex;
+    flex-direction: column;
+    gap: 2rem;
+  }
+
+  /* Links heading */
+  .footer-links > h3 {
+    font-size: 1.5rem;
+    font-weight: 700;
+  }
+
+  /* Links Section */
+  .footer-links > ul{
+    font-size: 1.25rem;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    gap: 1rem;
+  } 
+
+  /* Contact Column */
+  .footer-contact{
+    display: flex;
+    flex-direction: column;
+    gap: 3rem;
+  }
+
+  /* Individual contacts */
+  .footer-contact > div {
+    display: flex;
+    flex-direction: row;
+    gap: 0.5rem;
+  }
+
+  /* Individual contact details  */
+  .footer-contact > div > div {
+    display: flex;
+    flex-direction: column;
+    gap: 0.5rem;
+  }
+
+  /* details text  */
+  .footer-contact > div > div > p{
+    font-size: 1.25rem;
+  }
+
+  /* footer icons color  */
+  .footer-links > ul > li > a > span,
+  .footer-contact > div > span
+  {
+    color: var(--primary);
+  }
+
+  /* contact icons size  */
+  .footer-contact > div > span{
+    font-size: 2.5rem;
+  }
+
+  /* copyright section  */
+  .copyright{
+    background-color: var(--primary);
+    color: var(--text);
+    padding: 0.25rem 5rem ;
+    font-size: 1.25rem;
+  }
+  @media screen and (min-width:768px) {
+    .footer-section{
+        flex-direction: row;
+        justify-content: flex-end;
+        align-items: flex-start;
+        gap: 10rem;
+        padding: 5rem 10rem 5rem 0rem;
+    }
+  }
