@@ -11,9 +11,7 @@ const HeroSection = () => {
     {Hero.title[2]}<br/>
     <span  className='hero-text'>{Hero.title1}</span>
     </h1>
-    <BlurLoad smallImg={Hero.imageSmall}>
-    <img src={Hero.image} alt="hero" className='hero-img' loading='lazy'/>
-    </BlurLoad>
+    <BlurLoad img={Hero.image} smallImg={Hero.imageSmall} alt={`hero`} style={`hero-img`} />
     </section>
   )
 }

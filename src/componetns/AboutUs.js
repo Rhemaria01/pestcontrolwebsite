@@ -18,9 +18,7 @@ const AboutUs = () => {
         </ul>
         </div>
         <div>
-        <BlurLoad smallImg={AboutUS.imageSmall}>
-            <img src={AboutUS.image} alt="about-us" className='about-img' loading='lazy'/>
-        </BlurLoad>
+        <BlurLoad img={AboutUS.image} smallImg={AboutUS.imageSmall} alt={`about-us`} style={`about-img`} />
         <div className="exp-card">
               <h3>{AboutUS.expYears}</h3>
               <p>{AboutUS.expText}</p>

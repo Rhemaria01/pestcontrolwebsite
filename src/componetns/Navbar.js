@@ -1,18 +1,15 @@
-import React,{useContext,useEffect} from 'react'
+import React,{useContext} from 'react'
 import { Link } from 'react-router-dom'
 import { ModalContext } from '../context/ModalContext'
 import "../css/nav.css"
 import BlurLoad from './BlurLoad'
-import loadImage from '../utils/loadImage'
 import { NavData } from '../data/Nav'
 
 const Navbar = () => {
 
-  useEffect(()=>{
-    loadImage()
-  },[])
 
-  const modal = useContext(ModalContext)
+  const modal = useContext(ModalContext);
+
   const toggleMenu = (e) => {
     const links = document.getElementById("links"); 
     if (links.style.display === "none") {
@@ -21,28 +18,29 @@ const Navbar = () => {
       links.style.display = "none";
     }
   }
+
   return (
-    <nav className={`container nav ${modal.modalOpen && "blur"}`} role="navigation"> 
+    <nav  className={`container nav ${modal.modalOpen && "blur"}`} role="navigation"> 
     <button className='menu-toggle' id="menu" onClick={e => toggleMenu(e)}>
-    <BlurLoad smallImg={NavData.logoSmall}>
-    <img src={NavData.logo} alt="logo" className="logo" />
-    </BlurLoad>
+    <BlurLoad img={NavData.logo} smallImg={NavData.logoSmall} alt={`logo`} style={`logo`} />
     </button>
-    <div className='links' id="links">    
-    {NavData.links.map((link,index) => {
+    <ul className='links' id="links">    
+    {NavData.links.slice(0,2).map((link,index) => {
        return (
-        
-        <>
-        {
-        index === 2 && <BlurLoad smallImg={NavData.logoSmall}>
-         <img src={NavData.logo} alt="logo" className="logo small-hide" />
-        </BlurLoad>
-        }
-        <Link to={link.to} key={index}>{link.icon} {link.title}</Link>
-        </>
+        <li key={index}>
+        <Link to={link.to} >{link.icon}{link.title}</Link>
+        </li>
       )
     })}
-    </div>
+    {<BlurLoad img={NavData.logo} smallImg={NavData.logoSmall} alt={`logo`} style={`logo small-hide`} /> }
+    {NavData.links.slice(2).map((link,index) => {
+       return (
+        <li key={index}>
+        <Link to={link.to} >{link.icon}{link.title}</Link>
+        </li>
+      )
+    })}
+    </ul>
      </nav>
   )
 }

@@ -13,6 +13,7 @@
     font-size: 1.25rem;
     cursor: pointer;
 }
+
 .service-img,.service-img-full{
     aspect-ratio: 1/1;
     width: 100%;
@@ -20,6 +21,7 @@
     object-position: center;
     object-fit: cover;
 }
+
 .service-card-full{
     aspect-ratio: 16/9;
     display: flex;
@@ -27,9 +29,11 @@
     border-radius: 1rem;
     border: solid  var(--primary) 3px;
 }
+
 .service-img-full{
     border-right: solid var(--primary) 1px ;
 }
+
 .service-card-info{
     width:100%;
     display: flex;
@@ -37,14 +41,17 @@
     gap: 1rem;
     padding-left: 0.5rem;
 }
+
 .service-card-info > h4{
     margin-top: 1rem;
     font-size: 1.5rem;
 }
+
 .service-card-info > h3{
     font-size: 1.25rem;
     text-transform: capitalize;
 }
+
 .service-card-info > p{
     font-size: 0.9rem;
 }
