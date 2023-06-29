@@ -43,7 +43,7 @@ const CTA = () => {
     }
     const validateEmail = () => {
         const element = document.getElementById("Email")
-        if(/^\w+([\.-]?\w+)*@\w+([\.-]?\w+)*(\.\w{2,3})+$/.test(formFields.email)){
+        if(/^\w+([.-]?\w+)*@\w+([.-]?\w+)*(\.\w{2,3})+$/.test(formFields.email)){
             element.children[0].classList.remove("error")
             element.children[2].innerHTML = "";
             return true

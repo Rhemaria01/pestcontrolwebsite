@@ -1,6 +1,5 @@
 import { TeamData } from "../data/TeamData"
 import "../css/team.css"
-import BlurLoad from "../componetns/BlurLoad"
 const TeamCard = ({member}) =>{
     return(
     <div className="team-card">
