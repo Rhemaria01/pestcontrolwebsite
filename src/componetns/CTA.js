@@ -66,7 +66,7 @@ const CTA = () => {
   return (
     <article className='cta container'>
         <h2 className='home-text '>{CallToAction.title}</h2>
-        <form className='cta-form'>
+        <form className='cta-form' data-netlify="true" name="cta" method='POST'>
             {CallToAction.fields.map((field,index) =>{
                 return <div key={index}>
                 <InputField placeholder={field.placeholder} type={field.type} value={field.value}  handleChange={fieldChange} handleClick={formSubmit}/>
