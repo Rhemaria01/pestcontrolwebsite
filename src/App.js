@@ -6,9 +6,12 @@ import Loader from './componetns/Loader';
 import { ModalContext } from './context/ModalContext';
 import Modal from './componetns/Modal';
 import Footer from './componetns/Footer';
+
 const Homepage = lazy(() => import("./pages/Homepage"))
 const ServicesPage = lazy(() => import('./pages/ServicesPage')) ;
 const ContactUs = lazy(()=>import('./pages/ContactUs'))
+const Team = lazy(() => import('./pages/Team'))
+
 function App() {
   const [modalOpen, setModalOpen] = useState(false);
   const [message,setMessage] = useState("");
@@ -22,6 +25,7 @@ function App() {
     <Route path="/" element={<Suspense fallback={<Loader/>}><Homepage/></Suspense>}/>
     <Route path="/services" element={<Suspense fallback={<Loader/>}><ServicesPage/> </Suspense>}/>
     <Route path="/contact-us" element={<Suspense fallback={<Loader/>}><ContactUs /> </Suspense>}/>
+    <Route path="/team" element={<Suspense fallback={<Loader/>}><Team /></Suspense>}/>
     </Routes>
     <Footer/>
     {modalOpen && <Modal />}

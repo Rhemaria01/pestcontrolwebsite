@@ -141,6 +141,8 @@ text-underline-offset: 1.5rem;
 .aws-img{
   width: 100%;
   border-radius: 1rem;
+  object-position: center;
+  object-fit: cover;
 }
 
 .review-section > h3 {
@@ -165,6 +167,8 @@ text-underline-offset: 1.5rem;
 .avatar{
   aspect-ratio: 1/1;
   width: 15.625rem;
+  object-position: center;
+  object-fit: cover;
 }
 .review-description{
   display: flex;
