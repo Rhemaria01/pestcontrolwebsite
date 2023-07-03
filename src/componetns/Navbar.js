@@ -32,7 +32,7 @@ const Navbar = () => {
         </li>
       )
     })}
-    {<BlurLoad img={NavData.logo} smallImg={NavData.logoSmall} alt={`logo`} style={`logo small-hide`} /> }
+    {<li><BlurLoad img={NavData.logo} smallImg={NavData.logoSmall} alt={`logo`} style={`logo small-hide`} /> </li>}
     {NavData.links.slice(2).map((link,index) => {
        return (
         <li key={index}>

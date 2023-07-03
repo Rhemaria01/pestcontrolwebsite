@@ -5,7 +5,7 @@ const AWSCard = ({area}) => {
     return (
     <div className="aws-card">
         <BlurLoad img={area.image} smallImg={area.imageSmall} alt={area.title} style={`aws-img`} />
-        <h3>{area.title}</h3>
+        <h4>{area.title}</h4>
     </div>
     )
 }
