@@ -1,5 +1,5 @@
-import Phil from "../assets/Phil.jpeg"
-import Heisenberg from "../assets/Heisenberg.jpeg"
+import Phil from "../assets/Phil.webp"
+import Heisenberg from "../assets/Heisenberg.webp"
 export const TeamData = {
     heading: "Meet the Team",
     members: [{
